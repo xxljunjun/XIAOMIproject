@@ -1,0 +1,34 @@
+html,body,img,input,ul,ol,dl,dt,dd,em,i,strong,h1,h2,h3,h4,h5,h6,div,span,
+p,table,li,tr,td,th{
+	padding: 0;margin: 0;
+}
+ul li,ol li{
+	list-style: none;
+}
+.clearfix:after{/* 清除浮动 */
+	content:"";
+	display: block;
+	clear: both;
+	font-size: 1px;
+}
+a{
+	text-decoration: none;
+}
+select{
+	border: 0;
+}
+input{
+	outline: none;
+	border: 0;
+}
+img{
+	 /* 去除图片默认边框 */
+	vertical-align:top;
+	/* dispaly:block */
+}
+i{
+	font-style: normal;
+}
+em,strong,h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}

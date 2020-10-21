@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: fixed;
+            margin: auto;
+            left: 0;top: 0;right: 0;bottom: 0;
+            height: 400px;
+            width: 400px;
+        }
+        div p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>待完成页面</p>
+        <button id="btn">回到首页</button>
+    </div>
+</body>
+<script>
+    var btn =document.getElementById('btn');
+    btn.onclick=function(){
+        location.href='./index.html';
+    }
+</script>
+</html>

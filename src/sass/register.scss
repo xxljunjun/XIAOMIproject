@@ -1,0 +1,133 @@
+@import './base.scss';//添加公共scss文件
+@import './mixin.scss';//添加公共scss方法
+@import './variable.scss';//添加公共定义的变量
+
+body{
+    background: #f9f9f9;
+}
+.box{
+    width: 860px;
+    height: 555px;
+    background: #fff;
+    margin: 60px auto 0;
+    .xiaomi{
+        text-align: center;
+        font-size: 30px;
+        color: #2a2929;
+        line-height: 30px;
+        margin: 46px 0 42px;
+    }
+    h1,h2,h3{
+        margin-left: 265px;
+        line-height: 14px;
+        margin-bottom: 7px;
+    }
+    h1{
+        font-size: 14px;
+        color: #27282e; 
+    }
+    h2{
+        font-size: 14px;
+        color: #27282e;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 14px;
+        color: #27282e;
+    }
+    h4{
+        text-align: center;
+        font-size: 14px;
+        color: #27282e;
+        a{
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    .btn{
+        display: block;
+        width: 332px;
+        height: 42px;
+        background: #ff6700;
+        color: #fff;
+        font-size: 14px;
+        line-height: 42px;
+        margin: 30px 0  82px 265px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .text{
+        width: 332px;
+        height: 44px;
+        border: 2px solid #f2f2f2;
+        margin-left: 265px;
+    }
+    .location{
+        width: 332px;
+        height: 42px;
+        border: 2px solid #f2f2f2;
+        margin-left: 265px;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+        line-height: 55px;
+        height: 55px;
+        width: 55px;
+        background-color: #ff6700;
+        margin: 0 auto;
+        span{
+            font-size: 28px;
+            color: #fff;
+        }
+    }
+    .myName{
+        width: 330px;
+        height: 40px;
+    }
+    .pw{
+        width: 330px;
+        height: 40px;
+    }
+    .error{
+        color: red;
+    }
+}
+.copy{
+    height: 100px;
+    width: 1130px;
+    margin: auto;
+    .copyTop{
+        width: 1130px;
+        height: 20px;
+        margin-top: 20px;
+        ul{
+            margin-left: 350px;
+            li{
+                float: left;
+                margin: 0 14px 0 10px ;
+                a{
+                    color: #4e4122;
+                    font-size: 16px;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+            &:nth-child(2n){
+                margin: 0 14px 0 10px ;
+            }
+        }
+    }
+    p{
+        width: 1130px;
+        float: left;
+        text-align: center;
+        margin-top: 20px;
+        a{
+            color: #4e4122;
+            font-size: 16px;
+        }
+    }
+}

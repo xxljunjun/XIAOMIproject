@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号—登入</title>
+    <link rel="shortcut icon" href="../images/favicon.ico"/><!-- 标题图标 -->
+    <link rel="stylesheet" href="../css/login.css"><!-- login登入样式表 -->
+    <link rel="stylesheet" href="../css/public.css"><!-- css公用样式表 -->
+    <link rel="stylesheet" href="../font/iconfont.css"> <!--图片字体  --> 
+</head>
+<body>
+    <div class="top">
+        <div class="topLeft">
+            <div class="logo">
+                    <span class="iconfont">&#xe604;</span>
+            </div>
+            <h2 class="xiao">小米商城</h2>
+            <p class="mi">让每个人都能享受科技的乐趣</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-cen">
+            <div class="box">
+                <p class="sp_1">
+                    <span class="yangshe ma">账号登入</span>
+                    <i>|</i>
+                    <span class="ma">扫码登入</span>
+                </p>
+                <div class="content_1 content">
+                    <form class="submit">
+                        <input type="text" class="text" placeholder="邮箱/手机号码/小米ID" name="username" >
+                        <input type="password" class="pw" placeholder="密码" name="password">
+                        <input type="submit" class="btn" value="登入">
+                    </form>
+                    <!-- <span class="btn">登入</span> -->
+                    <p class="sp">
+                        <a href="./register.html">手机短信登入注册</a>
+                    </p>
+                    <p class="sp_2">
+                        <span>
+                            <a href="./register.html">立即注册</a>
+                        </span>
+                        <i>|</i>
+                        <span>
+                            <a href="./mima.html">忘记密码？</a>
+                        </span>
+                    </p>
+                    <ul>
+                        <li><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100284651&redirect_uri=https://account.xiaomi.com/pass/sns/login/load&state=STATE_250525">
+                            <em class="iconfont">&#xe60a;</em>
+                        </a></li>
+                        <li><a href="https://api.weibo.com/oauth2/authorize?response_type=code&client_id=2996826273&redirect_uri=https://sns.account.xiaomi.com/pass/sns/login/load&state=STATE_074475###">
+                            <em class="iconfont">&#xe60b;</em>
+                        </a></li>
+                        <li><a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D53062d8b92c6e3e7b77c7871023b5a91">
+                            <em class="iconfont">&#xe629;</em>
+                        </a></li>
+                        <li><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxa21de3acc0d5e79b&redirect_uri=https%3A%2F%2Fsns.account.xiaomi.com%2Fpass%2Fsns%2Flogin%2Fload&response_type=code&scope=snsapi_login&state=STATE_573188#wechat_redirect">
+                            <em class="iconfont">&#xe60c;</em>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="content_2 content">
+                    <img src="../images/download.png" alt="图片加载失败">
+                    <h2>
+                        使用
+                        <span>小米商城APP</span>
+                        扫一扫
+                    </h2>
+                    <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="copyTop">
+            <ul>
+                <li><a href="#">简体</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">繁体</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="https://privacy.mi.com/miaccount/en_US/">常见问题</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="https://static.account.xiaomi.com/html/faq/en_US/faqList.html">隐私政策</a></li>
+            </ul>
+        </div>
+        <p>
+            小米公司版权所有-京ICP备10046444-
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img src="../images/loginimages/ghs.png" alt="图片加载失败"></span>京公网安备11010802020134号</a>
+            -京ICP证110507号
+        </p>
+    </div>
+</body>
+<script src="../lib/jQuery/jquery.min.js"></script><!-- jquery文件选项卡 -->
+<script src="../js/cookie.js"></script><!-- 创建cookie的方法 -->
+<script src="../js/login.js"></script><!-- login的js文件 -->
+</html>

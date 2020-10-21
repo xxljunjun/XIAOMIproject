@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="../css/index.css"><!-- 首页的css样式 -->
+    <link rel="stylesheet" href="../css/public.css"> <!-- css的公用样式表 -->
+    <link rel="stylesheet" href="../font/iconfont.css"> <!--图片字体  --> 
+    <link rel="shortcut icon" href="../images/favicon.ico"/><!-- 标题图标 -->
+    <link rel="stylesheet" href="../lib/swiper/swiper.css"><!-- 轮播图 css-->
+    <script src="../lib/swiper/swiper.js"></script><!-- 轮播图js -->
+</head>
+<body>
+    <div class="top">
+        <a href="#">
+        <div class="top-cen">
+            <div><img src="../images/001_03.gif" alt="图片加载失败" class="pic_1"></div>
+            <div>
+                <p class="txt_1">1分抽奖拼手气千元豪礼等你来!</p>
+                <p class="txt_2">微信扫一扫></p>
+            </div>
+            <div><img src="../images/001_06.gif" alt="图片加载失败" class="pic_2"></div>
+        </div>
+        </a>
+    </div>
+    <!--
+         top 
+         end 
+    -->
+    <div class="header">
+        <div class="header-cen">
+            <div class="header-cenLeft">
+                <ul>
+                    <li><a href="./index.html">小米商城</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">MIUI</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">loT</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">云服务</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">金融</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">有品</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">小爱开放平台</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">资质证照</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">协议规则</a></li>
+                    <li><span>|</span></li>
+                    <li class="app"><a href="./undefind.html">
+                        下载app
+                        <div class="downApp"></div>
+                        <span id="erweima">
+                            <img src="../images/download.png" alt="图片加载失败">
+                            <p>小米商城APP</p>
+                        </span>
+                    </a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">智能生活</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="./undefind.html">Select Location</a></li> 
+                </ul>
+            </div>
+            <div class="header-cenRight">
+                <ol>
+                    <li class="mingzilist">
+                        <a href="./login.html" class="yuan">登录</a>
+                        <a href="./grzx.html" class="mingzi now"></a>
+                        <i class="iconfont jian">&#xe60e;</i>
+                    </li>
+                    <li><span>|</span></li>
+                    <li>
+                        <a href="./register.html" class="yuan">注册</a>
+                        <a href="./grzx.html" class="now">消息通知</a>
+                    </li>
+                    <li><span>|</span></li>
+                    <li>
+                        <a href="./login.html" class="yuan">消息通知</a>
+                        <a href="./grzx.html" class="now">我的订单</a>
+                    </li>
+                    <li><a href="./cart.html" class="shopping"><em class="iconfont">&#xe62e;</em>购物车（<i>0</i>）</a></li>
+                </ol>
+                <ul id="personal">
+                    <li><a href="./grzx.html">个人中心</a></li>
+                    <li><a href="./grzx.html">评价晒单</a></li>
+                    <li><a href="./grzx.html">我的喜欢</a></li>
+                    <li><a href="./grzx.html">小米账户</a></li>
+                    <li><a href="./index.html" class="outBtn">退出登录</a></li>
+                </ul>
+                <div class="cartList">
+                    <!-- <div class="cartList_1">
+                        <ul>
+                            <li></li><a href=""></a>
+                        </ul>
+                    </div>
+                    <div class="heji"></div> -->
+                    <div class="noshopping">
+                        购物车没有商品赶紧选购吧
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        header 
+        end 
+    -->
+    <div class="searchbig">
+        <div class="search">
+            <div class="search-left">
+                <a href="#" class="animateLogo">
+                    <span class="iconfont LOGO">&#xe604;</span>
+                    <span class="iconfont house">&#xe625;</span>
+                </a>
+            </div>
+            <div class="search-cen">
+                <ul class="search-cenList">
+                    <li class="zhangkai"><a href="#">小米手机</a></li>
+                    <li class="zhangkai" class="zhangkai"><a href="#">Redmi 红米</a></li>
+                    <li class="zhangkai"><a href="#">电视</a></li>
+                    <li class="zhangkai"><a href="#">笔记本</a></li>
+                    <li class="zhangkai"><a href="#">家电</a></li>
+                    <li class="zhangkai"><a href="#">路由器</a></li>
+                    <li class="zhangkai"><a href="#">智能硬件</a></li>
+                    <li><a href="./undefind.html">服务</a></li>
+                    <li><a href="./undefind.html">社区</a></li>
+                </ul>
+            </div>
+            <div class="search-right">
+                <form action="#">
+                    <input type="submit" value="&#xe600;" class="iconfont submit">
+                    <input type="text" placeholder="电视" class="text">
+                    <div class="information">
+                        <ul>
+                            <li><a href="#">王一博同款手机</a></li>
+                            <li><a href="#">小米10</a></li>
+                            <li><a href="#">Redmi K30 Pro</a></li>
+                            <li><a href="#">卡丁车</a></li>
+                            <li><a href="#">1全部商品</a></li>
+                            <li><a href="#">耳机</a></li>
+                            <li><a href="#">空调</a></li>
+                            <li><a href="#">净水器</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="phone_list">
+                <div class="phone_listCen">
+                    <ul class="one_1 one">
+                        <li><a href="./details.html">
+                            <img src="../images/list_0/p_1.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_10.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>2899元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_4.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4599元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4099元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_6.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>3999元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_2 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/p_6.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>1299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>1899元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_4.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>2999元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_10.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>3999元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/p_2.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4299元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_3 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/dian_1.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>2799元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/dian_2.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5289元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/dian_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5239元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/dian_4.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5399元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/phone.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/dian_6.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_4 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/biji_1.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>3299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/phone.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/biji_3.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/biji_4.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/biji_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/biji_6.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_5 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_1.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>4299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/jiadian_2.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/jiadian_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/jiadian_4.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/jiadian_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/jiadian_6.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_6 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_1.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/luyoy_2.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/luyoy_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/luyoy_4.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/luyoy_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/luyoy_6.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                    </ul>
+                    <ul class="one_7 one">
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_1.png" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>6299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_2.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_3.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_4.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_5.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/list_0/zhi_6.jpg" alt="图片加载失败">
+                            <h2>小米至尊纪念版</h2>
+                            <p>5299元起</p>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        search 
+        end 
+    -->
+    <div class="main">
+        <div class="main-top">
+            <!-- Swiper轮播图 -->
+            <div class="swiper-container main-topRight">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(../images/lunbo_1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../images/lunbo_2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../images/lunbo_3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../images/lunbo_4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../images/lunbo_5.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white dot"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white arw-Right arw iconfont">&#xe603;</div>
+                <div class="swiper-button-prev swiper-button-white arw-Left arw iconfont">&#xe680;</div>
+            </div>
+            <div class="main-topLeft">
+                <ul>
+                    <li>  
+                        <a href="./undefind.html">手机 电话卡<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">电视 盒子<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">笔记本 显示器<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">家电 插线板<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">出行 穿戴<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">智能 路由器<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">电源 配件<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">健康 儿童<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">耳机 音响<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                    <li>
+                        <a href="./undefind.html">生活 箱包<span class="iconfont">&#xe608;</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="phoneList_1 phoneList">
+                <!-- 23个li -->
+                <ul>
+                    <!-- <li><a href="./details.html">
+                        <img src="../images/list_0/zhi_1.png" alt="图片加载失败">
+                        <span>小米至尊纪念版</span>
+                    </a></li> -->
+                </ul>
+            </div>
+            <div class="phoneList_2 phoneList">
+                <!-- 24个li -->
+                <ul>
+     
+                </ul>
+            </div>
+            <div class="phoneList_3 phoneList">
+                <!-- 15个li -->
+                <ul>
+ 
+                </ul>
+            </div>
+            <div class="phoneList_4 phoneList">
+                <!-- 24个li -->
+                <ul>
+  
+                </ul>
+            </div>
+            <div class="phoneList_5 phoneList">
+                <!-- 15个li -->
+                <ul>
+    
+                </ul>
+            </div>
+            <div class="phoneList_6 phoneList">
+                <!-- 15个li -->
+                <ul>
+
+                </ul>
+            </div>
+            <div class="phoneList_7 phoneList">
+                <!-- 12个li -->
+                <ul>
+ 
+                </ul>
+            </div>
+            <div class="phoneList_8 phoneList">
+               <!-- 15个li -->
+                <ul>
+  
+                </ul>
+            </div>
+            <div class="phoneList_9 phoneList">
+                <!-- 15个li -->
+                <ul>
+      
+                </ul>
+            </div>
+            <div class="phoneList_10 phoneList">
+               <!-- 15个li -->
+                <ul>
+ 
+                </ul>
+            </div> 
+        </div>
+        <div class="main-buttom">
+            <div class="main-buttomLeft">
+                <ul>
+                    <li><a href="./undefind.html"><img src="../images/time.png" alt="图片加载失败">小米秒杀</a></li>
+                    <li><a href="./undefind.html"><img src="../images/qiyetuangou.png" alt="图片加载失败">企业团购</a></li>
+                    <li><a href="./undefind.html"><img src="../images/qiyetongdao.png" alt="图片加载失败">F码通道</a></li>
+                    <li><a href="./undefind.html"><img src="../images/mifengka.png" alt="图片加载失败">米粉卡</a></li>
+                    <li><a href="./undefind.html"><img src="../images/yijiuhuanxing.png" alt="图片加载失败">以旧换新</a></li>
+                    <li><a href="./undefind.html"><img src="../images/huafeichongzhi.png" alt="图片加载失败">话费充值</a></li>  
+                </ul>
+            </div>
+            <div class="main-buttomRight">
+                <ol>
+                    <li><a href="./details.html"><img src="../images/yellow.jpg" alt="图片加载失败"></a></li>
+                    <li><a href="./details.html"><img src="../images/lan.jpg" alt="图片加载失败"></a></li>
+                    <li><a href="./details.html"><img src="../images/lv.jpg" alt="图片加载失败"></a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        main 
+        end 
+    -->
+    <div class="box">
+        <div class="container boxCen">
+            <div class="seckill">
+                <div class="seckill-top">
+                    <p>小米闪购</p>
+                    <span class="leftbtn "><i class="iconfont gray">&#xe680;</i></span>
+                    <span class="rightbtn"><i class="iconfont">&#xe603;</i></span>
+                </div>
+                <div class="ulTimer">
+                    <div class="timer">
+                        <p>10:00场</p>
+                        <p><img src="../images/leidian_03.gif"></p>
+                        <p>距离结束还有</p>
+                        <p>
+                            <span class="hours">01</span>
+                            <i>:</i>
+                            <span class="minutes">56</span>
+                            <i>:</i>
+                            <span class="seconds">14</span>
+                        </p>
+                    </div>
+                    <div class="ulli">
+                        <ul>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_1.png" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_1.png" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">120</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/jiadian_1.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">121</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/luyoy_3.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">122</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_4.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">123</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_8.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">124</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/dian_2.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">125</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_13.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">126</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_6.png" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">127</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_4.png" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">128</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/p_9.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">129</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li> 
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_2.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">130</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li> 
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">131</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_4.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">132</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_5.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">133</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/zhi_6.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">134</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/luyoy_1.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">135</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/luyoy_2.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">136</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="tupian"><img src="../images/list_0/luyoy_3.jpg" alt="图片加载失败"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">137</span>
+                                    <del class="beforeprice">199</del>
+                                </p>
+                            </a></li>           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+                秒杀结束 
+            -->
+            <div class="plate-advertising">
+                <img src="../images/datu.jpg" alt="">
+            </div>
+            <div class="plate-cen">
+                <div class="title">
+                    <p><i>手机</i><span>查看全部<em class="iconfont">&#xe6a2;</em></span></p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/baner_1.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone">
+                        <ul class="phonetop">
+                            <li><a href="./details.html">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--  -->
+            <!--板块结束  -->
+            <!--  -->
+            <div class="plate-advertising">
+                <img src="../images/datu_2.jpg" alt="">
+            </div>
+            <div class="plate-cen_1">
+                <div class="title">
+                    <p>
+                        <i>家电</i>
+                        <span class="sp_2 ">电视影音</span>
+                        <span class="sp_1 bord">热门</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败" class="pic_1">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone phone_1">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>999悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/zhi_3.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_2">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>888悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--
+                板块一结束 
+             -->
+            <div class="plate-advertising">
+                <img src="../images/datu_3.jpg" alt="">
+            </div>
+            <div class="plate-cen_2">
+                <div class="title">
+                    <p>
+                        <i>家电</i>
+                        <span class="sp_3 sp">出行</span>
+                        <span class="sp_2 sp">安防</span>
+                        <span class="sp_1 bord sp">热门</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败" class="pic_1">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone phone_1">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>111悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_2">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>2222悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/list_0/dian_6.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_3">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>33333悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--
+                板块二结束  
+            -->
+            <div class="plate-advertising">
+                <img src="../images/datu_4.jpg" alt="">
+            </div>
+            <div class="plate-cen_1">
+                <div class="title">
+                    <p>
+                        <i>家电</i>
+                        <span class="sp_2 ">电视影音</span>
+                        <span class="sp_1 bord">热门</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败" class="pic_1">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone phone_1">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_2">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--
+                板块三结束 
+             -->
+            <div class="plate-advertising">
+                <img src="../images/datu_5.jpg" alt="">
+            </div>
+            <div class="plate-cen_1">
+                <div class="title">
+                    <p>
+                        <i>家电</i>
+                        <span class="sp_2 ">电视影音</span>
+                        <span class="sp_1 bord">热门</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败" class="pic_1">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone phone_1">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_2">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                                <a href="#" id="goto_2">
+                                    <h2>浏览更多</h2>
+                                    <p>热门</p>
+                                    <span class="iconfont">&#xe609;</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--
+                板块四结束 
+            -->
+            <div class="plate-advertising">
+                <img src="../images/datu_6.jpg" alt="">
+            </div>
+            <div class="plate-cen_1">
+                <div class="title">
+                    <p>
+                        <i>家电</i>
+                        <span class="sp_2 ">电视影音</span>
+                        <span class="sp_1 bord">热门</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败" class="pic_1">
+                        <img src="../images/dianshi.jpg" alt="图片加载失败">
+                    </div>
+                    <div class="phone phone_1">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="phone phone_2">
+                        <ul class="phonetop">
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>    
+                        </ul>
+                        <ul class="phonedown">
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li class="go"><a href="#">
+                                <div><img src="../images/phone.jpg" alt="图片加载失败" class="img_1"></div>
+                                <h2>悦米YM人体工学椅 白色</h2>
+                                <p class="role">健康坐姿，舒适体验</p>
+                                <p class="price">
+                                    <span class="nowprice">119</span>
+                                </p>
+                            </a></li>
+                            <li id="go">
+                                <a href="#" id="goto_1">
+                                    <h2>九号平衡车</h2>
+                                    <p>1899</p>
+                                    <img src="../images/pinghengche.jpg" alt="图片加载失败">
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!--
+                板块五结束 
+            -->
+            <div class="plate-advertising">
+                <img src="../images/datu_1.jpg" alt="">
+            </div>
+            <div id="video">
+                <div class="title">
+                    <p><i>视频</i><span>查看全部<em class="iconfont">&#xe6a2;</em></span></p>
+                </div>
+                <div class="video">
+                    <ul>
+                        <li><a href="#">
+                            <img src="../images/video_1.jpg" alt="图片加载失败">
+                            <h2>Redmi 10X系列发布发布会</h2>
+                            <p>Redmi 10X系列发布发布会</p>
+                            <span><em class="iconfont">&#xe635;</em></span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/video_1.jpg" alt="图片加载失败">
+                            <h2>Redmi 10X系列发布发布会</h2>
+                            <p>Redmi 10X系列发布发布会</p>
+                            <span><em class="iconfont">&#xe635;</em></span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/video_1.jpg" alt="图片加载失败">
+                            <h2>Redmi 10X系列发布发布会</h2>
+                            <p>Redmi 10X系列发布发布会</p>
+                            <span><em class="iconfont">&#xe635;</em></span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/video_1.jpg" alt="图片加载失败">
+                            <h2>Redmi 10X系列发布发布会</h2>
+                            <p>Redmi 10X系列发布发布会</p>
+                            <span><em class="iconfont">&#xe635;</em></span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+                video结束  
+            -->
+        </div>
+    </div>
+    <!-- 
+        box 
+        end 
+    -->
+    <div class="footer">
+        <div class="container footerCen">
+            <div class="footer-service">
+                <ul>
+                    <li><a href="#"><em class="iconfont">&#xe606;</em>预约维修服务</a></li>
+                    <li><a href="#"><em class="iconfont">&#xe602;</em>7天无理由退货</a></li>
+                    <li><a href="#"><em class="iconfont">&#xe616;</em>15天免费换货</a></li>
+                    <li><a href="#"><em class="iconfont">&#xe601;</em>满99元包邮</a></li>
+                    <li><a href="#"><em class="iconfont">&#xe6ab;</em>520余家售后网点</a></li>   
+                </ul>
+            </div>
+            <div class="list-service">
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>服务支持</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">自助服务</a></dd>
+                    <dd><a href="#">相关下载</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>线下门店</dt>
+                    <dd><a href="#">小米之家</a></dd>
+                    <dd><a href="#">服务网点</a></dd>
+                    <dd><a href="#">授权体验店</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>关于小米</dt>
+                    <dd><a href="#">了解小米</a></dd>
+                    <dd><a href="#">加入小米</a></dd>
+                    <dd><a href="#">投资者关系</a></dd>
+                    <dd><a href="#">企业社会责任</a></dd>
+                    <dd><a href="#">廉洁举报</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>关注我们</dt>
+                    <dd><a href="#">新浪微博</a></dd>
+                    <dd><a href="#">官方微信</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                    <dd><a href="#">公益基金会</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>特色服务</dt>
+                    <dd><a href="#">F 码通道</a></dd>
+                    <dd><a href="#">礼物码</a></dd>
+                    <dd><a href="#">防伪查询</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p>8:00-18:00（仅收市话费）</p>
+                    <a href="#" class="btn"><em class="iconfont">&#xe607;</em> 人工客服 </a>
+                    <div class="guanzhu">
+                        关注小米：
+                        <a href="#" class="weibo "><span class="iconfont">&#xe626;</span></a>
+                        <a href="#" class="weixing "><span class="iconfont">&#xe614;</span></a>
+                        <img src="../images/wx-img.png" alt="图片加载失败" class="weixingImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        footer 
+        end 
+    -->
+    <div class="copy">
+        <div class="container copyCen">
+            <div class="logo">
+                <span class="iconfont">&#xe604;</span>
+            </div>
+            <div class="text">
+                <p class="txt_1">
+                    <a href="#">小米商城</a>
+                    <span>|</span>
+                    <a href="#">MIUI</a>
+                    <span>|</span>
+                    <a href="#">米家</a>
+                    <span>|</span>
+                    <a href="#">米聊</a>
+                    <span>|</span>
+                    <a href="#">多看</a>
+                    <span>|</span>
+                    <a href="#">游戏</a>
+                    <span>|</span>
+                    <a href="#">政企服务</a>
+                    <span>|</span>
+                    <a href="#">小米天猫店</a>
+                    <span>|</span>
+                    <a href="#">小米集团隐私政策</a>
+                    <span>|</span>
+                    <a href="#">小米公司儿童信息保护规则</a>
+                    <span>|</span>
+                    <a href="#">小米商城隐私政策 </a>
+                    <span>|</span>
+                    <a href="#">小米商城用户协议 </a>
+                    <span>|</span>
+                    <a href="#">问题反馈</a>
+                    <span>|</span>
+                    <a href="#">Select Location</a>
+                </p>
+                <p class="txt_2">
+                    &copy;
+                    <a href="#">mi.com</a>
+                    京ICP证110507号
+                    <a href="#">京ICP备10046444号</a>
+                    <a href="#">京公网安备11010802020134号</a>
+                    <a href="#">京网文[2020]0276-042号</a>
+                    <br/>
+                    <a href="#">（京）网械平台备字（2018）第00005号</a>
+                    <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                    <a href="#">营业执照</a>
+                    <a href="#">医疗器械质量公告</a>
+                    <br/>
+                    <a href="#">增值电信业务许可证</a>
+                    网络食品经营备案 京食药网食备202010048&nbsp; 
+                    <a href="#">食品经营许可证</a>
+                    <br/>     
+                    违法和不良信息举报电话：171-5104-4404&nbsp;
+                    <a href="#">知识产权侵权投诉</a>
+                    本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+            </div>
+            <div class="lianjie">
+                <a href="#"><img src="../images/truste.png" alt="" class="img_3"></a>
+                <a href="#"><img src="../images/v-logo-2.png" alt="" class="img_3"></a>
+                <a href="#"><img src="../images/v-logo-1.png" alt="" class="img_3"></a>
+                <a href="#" class="anquan">
+                    <img src="../images/securit_2.png" alt=""class="anquanimg_2 imag">
+                    <img src="../images/securit.png" alt="" class="anquanimg_1 imag"> 
+                </a>
+            </div>
+            <div class="last">
+                让全球每个人都能享受科技带来的美好生活
+            </div>
+        </div>
+    </div>
+    <!-- 
+        copy 
+        end 
+    -->
+    <div class="absolute">
+        <ul>
+            <li class="phoneApp"><a href="javascript:;">
+                <em class="iconfont">&#xe61d;</em>
+                <p>手机APP</p>
+                <div class="triangle"></div>
+            </a></li>
+            <li><a href="./grzx.html">
+                <em class="iconfont">&#xe613;</em>
+                <p>个人中心</p>
+            </a></li>
+            <li><a href="./grzx.html">
+                <em class="iconfont">&#xe606;</em>
+                <p>售后服务</p>
+            </a></li>
+            <li><a href="./undefind.html">
+                <em class="iconfont">&#xe6b8;</em>
+                <p>人工服务</p>
+            </a></li>
+            <li><a href="./cart.html">
+                <em class="iconfont">&#xe62e;</em>
+                <p>购物车</p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="newErweima">
+        <img src="../images/download.png" alt="图片加载失败">
+        <span>
+            扫码领取新人百元礼包
+        </span>
+    </div>
+    <div class="backTop">
+            <em class="iconfont">&#xe605;</em>
+            <p>回顶部</p>
+    </div>
+    <!-- 右边固定栏目 -->
+</body>
+<script src="../lib/jQuery/jquery.min.js"></script><!-- jquery框架 -->
+<script src="../js/public.js"></script><!-- js通用函数 -->
+<script src="../js/cookie.js"></script><!-- 获取和设置cookie的方法 -->
+<script src="../js/index.js"></script><!-- 首页特效 -->
+</html>

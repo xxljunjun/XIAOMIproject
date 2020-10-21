@@ -1,0 +1,226 @@
+.top{
+    width: 1130px;
+    height: 98px;
+    margin: auto;
+    
+}
+.topLeft{
+    width: 240px;
+    height: 98px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.top .logo{/* 小米图标 */
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    height: 55px;
+    width: 55px;
+    background-color: #ff6700;
+    margin-top: 24PX;
+    float: left;
+    margin-right: 20px;
+}
+.top .logo span{/* 小米图标 */
+    font-size: 28px;
+    color: #fff;
+}
+.top h2{
+    color: #343434;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.top p{
+    color: #8a8a8a;
+    font-size: 12px;
+}
+/* top结束 */
+.main{
+    height: 587px;
+    background: url(../images/loginimages/xiaomi.png) no-repeat center center;
+}
+.main-cen{
+    width: 1130px;
+    height: 587px;
+    margin: auto;
+    
+}
+.main-cen .box{
+    width: 410px;
+    height: 555px;
+    float: right;
+    background: #fff;
+    margin-top: 32px;
+}
+.main-cen .box .content_1{
+    width: 410px;
+    height: 499px;
+    display: block;
+}
+.box .sp_1{
+    color: #3a3f4d;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 32px 0 0 66px;
+    margin-bottom: 24px;
+}
+.box .sp_1 i{
+    margin: 0 42px;
+    color: #dadada;
+}
+.box .sp_1 span{
+    cursor: pointer;
+}
+.box .ma{
+    color: #333;
+}
+.box .yangshe{
+    color: #f33b08;
+}
+.box .text{
+    width: 348px;
+    height: 52px;
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0;
+    margin-left: 30px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    margin-bottom: 12px;
+}
+.box .pw{
+    width: 348px;
+    height: 52px;
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0;
+    margin-left: 30px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    margin-bottom: 24px;
+}
+.box .btn{
+    box-sizing: border-box;
+    display: block;
+    width: 348px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    background: #ff6700;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.box .sp{
+    font-size: 14px;
+    text-align: center;
+    line-height: 14px;
+    width: 410px;
+    margin-top: 10px;
+    margin-bottom: 34px;
+    cursor: pointer;
+}
+.box .sp a{
+    color: #ff7215;
+}
+.box .sp_2{
+    font-size: 14px;
+    color: #9c969a;
+    padding-left: 135px;
+    line-height: 14px;
+}
+.box .sp_2 span{
+    cursor: pointer;
+}
+.box .sp_2 span a{
+    color: #9c969a;
+}
+.box ul{
+    margin-left: 92px;
+}
+.box ul li{
+    float: left;
+    margin-right: 32px;
+    margin-top: 90px;
+}
+.box ul li a em{
+    font-size: 24px;
+}
+.box ul li:nth-child(1) a{
+    color: #0085cf;
+}
+.box ul li:nth-child(2) a{
+    color: #d32d2d;
+}
+.box ul li:nth-child(3) a{
+    color: #00aaee;
+}
+.box ul li:nth-child(4) a{
+    color: #00d005;
+}
+.main-cen .box .content_2{
+    width: 410px;
+    height: 499px;
+    color: #757575;
+    font-size: 12PX;
+    display: none;
+}
+.main-cen .box .content_2 img{
+    width: 180px;
+    height: 180px;
+    margin: 120PX 0 40PX 120PX;   
+}
+.main-cen .box .content_2 h2{
+    text-align: center;
+}
+.main-cen .box .content_2 h2 span{
+    padding: 0 5px;
+    color: #ff6700;
+}
+.main-cen .box .content_2 p{
+    text-align: center;
+}
+.box .sp_1 span:hover{
+    color: #f33b08;
+}
+.box .sp_2 span:hover{
+    color: #f33b08;
+}
+/* main结束 */
+.copy{
+    height: 180px;
+    width: 1130px;
+    margin: auto;
+}
+.copyTop{
+    width: 1130px;
+    height: 20px;
+    margin-top: 100px;
+}
+.copyTop ul{
+    margin-left: 350px;
+}
+.copyTop ul li{
+    float: left;
+    margin: 0 14px 0 10px ;
+}
+.copyTop ul li:nth-child(2n){
+    margin: 0 14px 0 10px ;
+}
+.copyTop ul li a{
+    color: #4e4122;
+    font-size: 16px;
+}
+.copy p{
+    width: 1130px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+.copy p a{
+    color: #4e4122;
+    font-size: 16px;
+}
+.copyTop ul li a:hover{
+    color: #000;
+}
+/* copy结束 */
