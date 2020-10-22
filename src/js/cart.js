@@ -202,10 +202,12 @@
             $('.loginBtn').css('display','none')
             $('.shopBtn').css('background','#ff6700')
             $('.shopBtn a').css('color','#fff')
+            $('.shopBtn').css('left','0')
         }else{
             $('.yuan').css('display','block')
             $('.now').css('display','none')
             $('.loginBtn').css('display','block')
+            $('.shopBtn').css('left','190px')
         }
         //点击退出登入清除cookie
         $('.outBtn').click(function(){

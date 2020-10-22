@@ -126,6 +126,38 @@
                 $('#personal').slideUp(200,'linear')
             })
 
+            //需求八如果已经登入了，那么获取到cooki的值放在页面上
+                function getCookie(key){
+                    var str;
+                    str = "";
+        
+                    var tmp = document.cookie.split('; ');
+                    for(var i=0;i<tmp.length;i++){
+                        var t = tmp[i].split('=');
+                        if(t[0]===key){
+                            str = t[1];
+                        }
+                    }
+        
+                    return str;
+                    
+                }
+                var myName =getCookie('usname');
+                if(myName){
+                    $('.xiaoxiphone').css('display','none')
+                }else{
+                    $('.xiaoxiphone').css('display','block')
+                }
+
+                //需求八点击退出登录，清楚cookie
+                    $('.outBtn').click(function(){
+                        var time = new Date();
+                        time.setTime(time.getTime()-8*60*60*1000-1000);
+                        document.cookie = 'usname=100;expires='+time;
+                        //设置上一秒以前就过期了
+                        location.href="../pages/register.html"
+                })
+
 
 
 

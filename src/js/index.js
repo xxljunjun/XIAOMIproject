@@ -513,9 +513,11 @@
             $('.yuan').css('display','none')
             $('.now').css('display','block')
             $('.mingzi').html(myName)
+            $('.jian').css('display','block')
         }else{
             $('.yuan').css('display','block')
             $('.now').css('display','none')
+            $('.jian').css('display','none')
         }
 
     //需求七如果已经登入了，那么获取到cooki的值放在页面上
@@ -554,27 +556,72 @@
             })
 
         //需求七点滑动到购物车按钮上出现列表
-            $(".shopping").hover(function(){
-                $(".cartList").stop()
-                $(this).css('background','#fff')
-                $(this).css('color','#ff6700')
-                $(".cartList").slideDown(200,'linear')
-            },function(){
-                $(".cartList").stop()
-                $(this).css('background','#424242')
-                $(this).css('color','#fff')
-                $(".cartList").slideUp(200,'linear')
-            })
-            $('.cartList').mousemove(function(){
-                $(".cartList").stop()
-                $('.shopping').css('background','#fff')
-                $('.shopping').css('color','#ff6700')
-            })
-            $('.cartList').mouseout(function(){
-                $(".cartList").stop()
-                $('.shopping').css('background','#424242')
-                $('.shopping').css('color','#fff')
-                $(".cartList").slideUp(200,'linear')
+            function hasHover(){
+                $(".shopping").hover(function(){
+                    $(".cartList").stop()
+                    $(this).css('background','#fff')
+                    $(this).css('color','#ff6700')
+                    $(".cartList").slideDown(200,'linear')
+                },function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#ff6700')
+                    $('.shopping').css('color','#fff')
+                    $(".cartList").slideUp(200,'linear')
+                    
+                })
+                $('.cartList').mousemove(function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#fff')
+                    $('.shopping').css('color','#ff6700')
+                })
+                $('.cartList').mouseout(function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#ff6700')
+                    $('.shopping').css('color','#fff')
+                    $(".cartList").slideUp(200,'linear')
+                })
+            }
+
+            function NOHover(){
+                $(".shopping").hover(function(){
+                    $(".cartList").stop()
+                    $(this).css('background','#fff')
+                    $(this).css('color','#ff6700')
+                    $(".cartList").slideDown(200,'linear')
+                },function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#333')
+                    $('.shopping').css('color','#b0b0b0')
+                    $(".cartList").slideUp(200,'linear')
+                    
+                })
+                $('.cartList').mousemove(function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#fff')
+                    $('.shopping').css('color','#ff6700')
+                })
+                $('.cartList').mouseout(function(){
+                    $(".cartList").stop()
+                    $('.shopping').css('background','#333')
+                    $('.shopping').css('color','#b0b0b0')
+                    $(".cartList").slideUp(200,'linear')
+                })
+            }
+            //发请求询问数据库
+            $.ajax({
+                url:'../php/interface/showlist.php',
+                dataType:'json',
+                cache:false,
+                success:function(res){
+                    //购物车里有商品
+                    if(res.code){
+                        hasHover()
+                    //空购物车
+                    }else{
+                        NOHover()
+                    }
+                }
+
             })
             
 
@@ -602,11 +649,21 @@
                             $('.noshopping').hide();//空购物车隐藏
                             $('.cartList_0').empty();//清空容器
                             //对数据遍历，渲染到页面上
-                            
+                            var numArr=[];
                             $.each(arr,function(i,item){
                                 var num_1;
                                 num_1=item.product_price*item.product_num
-                                console.log(num_1)
+                                numArr.push(num_1)
+                                //数组求和的方法
+                                function sum(arr) {
+                                    var s = 0;
+                                    for (var i=arr.length-1; i>=0; i--) {
+                                      s += arr[i];
+                                    }
+                                    return s;
+                                }
+                                sum(numArr);
+                                $('.sp_2').html(sum(numArr)+"元");
 
                                 $('.heji').before(`
                                     <div class="cartList_0" id="${item.product_id}">
