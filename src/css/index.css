@@ -187,6 +187,93 @@
     box-shadow: 0 2px 5px rgba(0,0,0,.15);
     color: #424242;
 }
+.header-cenRight .cartList .hasshopping{
+    width: 316px;
+    /* padding-top: 20px; */
+}
+.cartList .hasshopping  .cartList{
+    position: relative;
+    width: 276px;
+    height: 80px;
+    padding: 0 20px;
+    font-size: 12px;
+}
+.cartList .hasshopping  .cartList_0 {
+    position: relative;
+    width: 316px;
+    height: 80px;
+}
+.cartList .hasshopping  .cartList_0 img{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.cartList .hasshopping  .cartList_0 .shopname{
+    float: left;
+    width: 95px;
+    height: 40px;
+    line-height: 20px;
+    margin: 10px 0 10px 10px;
+    color: #424242;
+    overflow: hidden;
+    font-size: 12px;
+}
+.cartList .hasshopping  .cartList_0 .xprice{
+    line-height: 20px;
+    float: right;
+    margin: 20px 40px 0 5px;
+    font-size: 12px;
+}
+.cartList .hasshopping  .cartList_0 .quchu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 16px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.cartList .hasshopping .cartList_0 .quchu i{
+    font-size: 10px;
+    color: #333;
+}
+.cartList .hasshopping .heji{
+    position: relative;
+    padding: 15px 20px;
+    background: #fafafa;
+    text-align: center;
+    width: 276px;
+    height: 42px;
+    font-size: 12px;
+}
+ .heji .sp_1{
+    float: left;
+    width: 135px;
+    color: #757575;
+    text-align: left;
+ }
+ .heji .sp_2{
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 31;
+    color: #424242;
+    background: #fff;
+    font-size: 16px;
+    color:#ff6700 ;
+}
+.heji .sp_go{
+    display: inline-block;
+    width: 130px;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    color: #f5f5f5;
+    background: #ff6700;
+    position: absolute;
+    right: 20px;
+}
 .header-cenRight #personal li:hover{
     background: #f5f5f5;
     color: #ff6700;
@@ -195,7 +282,7 @@
     color: #fff;
 }
 .header-cenRight ol li:last-child a:hover{
-    color: #b0b0b0; 
+    color: #070404; 
 }
 /* 头部导航位置结束 */
 .searchbig{
@@ -1585,8 +1672,26 @@
 .absolute ul li a:hover em{
     color: #fa721b;
 }
-.absolute .phoneApp{
+.absolute .phoneApp,.absolute .shangbiao_1{
     position: relative;
+}
+.absolute .shang{
+    position: relative;
+}
+.absolute .shangbiao{
+    position: absolute;
+    position: absolute;
+    right: 14px;
+    top: 18px;
+    padding: 0 5px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 10px;
+    background-color: #ff6700;
+    border: 2px solid #fff;
+    border-radius: 9px;
+
 }
 .triangle{
     position: absolute;

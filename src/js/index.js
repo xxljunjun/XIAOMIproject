@@ -565,7 +565,101 @@
                 $(this).css('color','#fff')
                 $(".cartList").slideUp(200,'linear')
             })
+            $('.cartList').mousemove(function(){
+                $(".cartList").stop()
+                $('.shopping').css('background','#fff')
+                $('.shopping').css('color','#ff6700')
+            })
+            $('.cartList').mouseout(function(){
+                $(".cartList").stop()
+                $('.shopping').css('background','#424242')
+                $('.shopping').css('color','#fff')
+                $(".cartList").slideUp(200,'linear')
+            })
             
+
+        //需求七首页购物车效果
+            //需求三打开购物车页面展示购物车里面的商品
+        //打开页面先展示一次
+        showCode();
+        //渲染商品到页面的方法
+        function showCode(){
+            $.ajax({
+                url:'../php/interface/showlist.php',
+                success:function(res){
+                    //后端反馈的信息code=1成功，code=0失败
+                    if(res.code){
+                        var arr =res.data;
+                        $('.num').html(arr.length)
+                        $('.num_0').html(arr.length)
+                        $('.shopping').css('background','#ff6700')
+                        $('.shopping').css('color','#fff')
+                        $('.shangbiao').html(arr.length)
+                        //后端返回的数据
+                        if(res.data){
+                            //如果数据库里有商品的话
+                            $('.hasshopping').show();//购物车显示
+                            $('.noshopping').hide();//空购物车隐藏
+                            $('.cartList_0').empty();//清空容器
+                            //对数据遍历，渲染到页面上
+                            
+                            $.each(arr,function(i,item){
+                                var num_1;
+                                num_1=item.product_price*item.product_num
+                                console.log(num_1)
+
+                                $('.heji').before(`
+                                    <div class="cartList_0" id="${item.product_id}">
+                                        <a href="./details.html" class="imgbox"><img src=${item.product_img} alt="图片加载失败"></a>
+                                        <a href="./details.html" class="shopname">${item.product_name}</a>
+                                        <span class="xprice">${item.product_price}元 × ${item.product_num}</span>
+                                        <a href="javascript:;" class="quchu"><i class="iconfont outshop">&#xe60d;</i></a>
+                                    </div>
+                                `);
+                                
+                                
+                            })
+                            
+                        }
+                    //code=0失败,空购物车
+                    }else{
+                        $('.hasshopping').hide()
+                        $('.noshopping').show()
+                        $('.shangbiao').hide()
+                    }
+                },
+                error:function(res){
+                    console.log(res)
+                },
+                dataType:'json',
+                cache:false
+            })
+        }
+        //如果点击按钮
+        $('.hasshopping').click(function(e){
+            var target =e.target;
+            if(target.className=="iconfont outshop"){
+                $.ajax({
+                    url:'../php/interface/delwq.php',
+                    data:{
+                        id:$(target).parents('.cartList_0').attr('id')
+                    },
+                    success:function(res){
+                        if(res.code){
+                            showCode();
+                            location.href='../pages/index.html'
+                        }
+                    },
+                    dataType:'json'
+                })
+                
+            }
+
+
+        })
+            
+
+        
         
 
 })()

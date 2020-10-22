@@ -202,6 +202,9 @@ body,html{
 .top #personal li a{
     color: #333;
 }
+.mydingdan:hover{
+    color: #ff6700;
+}
 /* main内容开始 */
 .main{
     width: 100%;
@@ -267,9 +270,15 @@ body,html{
     color: #fff;
     margin-right: 10px;
 }
+.main_1 .shopCart p{
+    position: relative;
+}
 .main_1 .shopCart p .shopBtn{  
     font-size: 14px;
     color: #ff6700;
+    position: absolute;
+    left: 190px;
+    top: 0;
 }
 /* 有商品时候的购物车 */
 .shopCartList{
@@ -454,8 +463,8 @@ body,html{
     vertical-align: top;
     border: 1px solid #b0b0b0;
     border-color: #e0e0e0!important;
-    background: #e0e0e0!important;
-    color: #b0b0b0!important;
+    background: #e0e0e0;
+    color: #b0b0b0;
 }
 .shopCartList .no-select-tip{
     width: 200px;
