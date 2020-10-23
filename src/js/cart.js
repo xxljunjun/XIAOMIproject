@@ -57,6 +57,27 @@
 
     //需求三打开购物车页面展示购物车里面的商品
         //打开页面先展示一次
+        function showUpdata(){
+            $.ajax({
+                url:'../php/interface/showlist.php',
+                success:function(res){
+                    if(res.data){
+
+                    }
+                },
+                error:function(res){
+                    console.log(res)
+                },
+                dataType:'json',
+                cache:false
+
+            })
+        }
+
+
+
+
+
         showCode();
         //渲染商品到页面的方法
         function showCode(){
@@ -130,7 +151,7 @@
                                 </div>`)           
                             })
                             //如果有数据的话，处于勾选状态
-                                
+                                // $('.colorBox_0').css('background','#ff6700')
                                 
                                 
 
@@ -167,6 +188,8 @@
                     success:function(res){
                         if(res.code){
                             showCode();
+                            $('.colorBox_0').css('background','#ff6700')
+                            // location.href="../pages/cart.html"
                         }
                     },
                     dataType:'json'
@@ -253,11 +276,15 @@
 
     //需求六点击变橙色事件
         //阻止事件冒泡的方法event.stopPropagation(); 
-        function shoppingcolor(){
-            $('.shopmany').empty();
-            $('.shopmany').html(0);
+        function shoppingcheng(){
+            $('.goshopping').css('background','#ff6700')     
+            $('.goshopping').css('color','#fff')
+            $('.no-select-tip').css('display','none')
+        }
+        function shoppingbai(){
             $('.goshopping').css('background','#e0e0e0')     
             $('.goshopping').css('color','#b0b0b0')
+            $('.no-select-tip').css('display','block')
         }
         function jian(){
             var shuzi_0 =Number($(target).parents('.item-box').find('.colornum').html())
@@ -280,6 +307,7 @@
                 //是否拥有h_color类名
                 if($(target).hasClass('h_color')){ 
                     $(target).removeClass('h_color')
+                    shoppingcheng()
                     //减少
                     var shuzi_0 =Number($(target).parents('.item-box').find('.colornum').html())
                     var shuzi_zong =Number($(target).parents('.shopCartList').find('.shopmany').html())
@@ -289,7 +317,7 @@
                         $('.colorBox_0').removeClass('h_color')
                         //当最后一个变成无色非选中状态时候
                         if($('.list-body').find('.h_color').length==0){
-                            shoppingcolor();
+                            shoppingbai();
                         }
                     }
                     $('.list-body').find('.h_color').length
@@ -299,7 +327,7 @@
                 }else{
                     //把所点击的商品价格添加到总价上面
                         //获得数据 
-                    
+                        shoppingcheng()
                     var shuzi_0 =Number($(target).parents('.item-box').find('.colornum').html())
                     var shuzi_zong =Number($(target).parents('.shopCartList').find('.shopmany').html())
                     $(target).parents('.shopCartList').find('.shopmany').html(shuzi_zong+shuzi_0)
@@ -308,9 +336,11 @@
                         var numberColor_1 =$('.list-body').find('.h_color').length
                         // console.log(numberColor_1)
                         //当最后一个变成橘色选中状态时候
+                        
                         if(numberColor_1==numberColor){
                             $('.colorBox_0').addClass('h_color')
-                            // showCode();
+                            shoppingcheng()
+                            showCode();
 
                         }   
                     }
@@ -324,7 +354,10 @@
             if($(target).hasClass('colorBox_0')){
                 //橘色变成无
                 if($(target).hasClass('h_color')){
-                    shoppingcolor()
+                    $('.shopmany').empty();
+                    $('.shopmany').html(0);
+                    $('.goshopping').css('background','#e0e0e0')     
+                    $('.goshopping').css('color','#b0b0b0')
                     $(target).removeClass('h_color')
                     $(target).parents('.shopCartList').find('.colorBox').removeClass('h_color')
                     $('.no-select-tip').css('display','block')
@@ -332,9 +365,9 @@
                     $('.checkBOx').html(0) 
                 //无变成橘色
                 }else{
+                    showCode();
                     $(target).addClass('h_color')
                     $(target).parents('.shopCartList').find('.colorBox').addClass('h_color')
-                    showCode();
                     $('.goshopping').css('background','#ff6700')     
                     $('.goshopping').css('color','#fff')
                     $('.no-select-tip').css('display','none')
