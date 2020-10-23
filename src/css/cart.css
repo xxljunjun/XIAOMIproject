@@ -306,7 +306,6 @@ body,html{
     line-height: 18px;
     border: 1px solid #e0e0e0;
     margin-left: 24px;
-    background-color: #fff;
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -315,6 +314,9 @@ body,html{
     top: -1px;
     cursor: pointer;
     font-size: 14px;
+}
+.shopCartList .h_color{
+    background: #ff6700;
 }
 .shopCartList .col-img{
     width: 120px;

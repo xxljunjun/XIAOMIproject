@@ -66,7 +66,7 @@
                     //后端反馈的信息code=1成功，code=0失败
                     if(res.code){
                         var arr =res.data;
-                        $('.shopNumber').html(arr.length)//显示购物车有几件商品
+                        // $('.shopNumber').html(arr.length)//显示购物车有几件商品
                         $('.checkBOx').html(arr.length)  
                         //后端返回的数据
                         if(res.data){
@@ -79,10 +79,14 @@
                             $('.goshopping').css('color','#fff')
                                 
                             //对数据遍历，渲染到页面上
-                            var numArr =[];
+                            var numArr =[];//求总价的数组
+                            var shopnumberArr =[];//求总商品的数组
                             $.each(arr,function(index,item){
+                                    //求总价和商品总数
                                     var num =item.product_price*item.product_num;
-                                    numArr.push(num)
+                                    numArr.push(num);
+                                    var num_1 =Number(item.product_num);
+                                    shopnumberArr.push(num_1);
                                     if(index==arr.length-1){
                                         //数组求和的方法
                                         function sum(arr) {
@@ -92,16 +96,19 @@
                                             }
                                             return s;
                                         }
+                                        sum(shopnumberArr);
                                         sum(numArr);
+                                        $('.shopNumber').html(sum(shopnumberArr));
                                         $('.shopmany').html(sum(numArr));
-                                    } 
+                                    }
+                                    
                                     
                                 //向盒子里添加信息   
                                 $('.list-body').append(`
                                 <div class="item-box" id="${item.product_id}">
                                     <div class="item-row clearfix">
                                         <div class="col col-check">
-                                            <i class="colorBox">√</i>
+                                            <i class="colorBox h_color">√</i>
                                         </div>
                                         <div class="col col-img"><img src="${item.product_img}" alt="图片加载失败"></div>
                                         <div class="col col-name">${item.product_name}</div>
@@ -109,11 +116,11 @@
                                         <div class="col col-num ">
                                             <div class="change-goods-num clearfix">
                                                 <a href="javascript:;" class="jian">-</a>
-                                                <input type="text" value="${item.product_num}">
+                                                <input type="text" class="numberInput" value="${item.product_num}">
                                                 <a href="javascript:;" class="add">+</a>
                                             </div>
                                         </div>
-                                        <div class="col col-total colornum">${item.product_price*item.product_num}元</div>
+                                        <div class="col col-total colornum">${item.product_price*item.product_num}</div>
                                         <div class="col col-action">
                                             <a href="#">
                                                 <em class="iconfont del">&#xe60d;</em>
@@ -123,8 +130,8 @@
                                 </div>`)           
                             })
                             //如果有数据的话，处于勾选状态
-                                $('.colorBox').css('background','#ff6700')
-                                $('.colorBox_0').css('background','#ff6700')
+                                
+                                
                                 
 
                         }
@@ -245,12 +252,90 @@
         })
 
     //需求六点击变橙色事件
-        /$('.colorBox').click(function(){
-            $('.colorBox').css('background','#fff')
-            $('.colorBox_0').css('background','#fff')
+        function shoppingcolor(){
+            $('.shopmany').empty();
             $('.shopmany').html(0);
+            $('.goshopping').css('background','#e0e0e0')     
+            $('.goshopping').css('color','#b0b0b0')
+        }
+        function jian(){
+            var zong =Number($('.shopmany').html())
+            var feng =Number($('.colornum').html())
+            var shiji =zong-feng
+            return shiji
+        }
+        function jia(){
+            var zong =Number($('.shopmany').html())
+            var feng =Number($('.colornum').html())
+            var shiji =zong+feng
+            return shiji
+        }
+
+
+        
+        $('.shopCartList').click(function(e){
+            var target =e.target;
+            //如果点击的是有colorBox这个类名的才能执行
+            var numberColor =$('.list-body').find('.colorBox').length
+            // console.log(numberColor)
+            if($(target).hasClass('colorBox')){
+                //是否拥有h_color类名
+                if($(target).hasClass('h_color')){
+                    $(target).removeClass('h_color')
+                    if(!($('.list-body').find('.colorBox').hasClass())){
+                        $('.colorBox_0').removeClass('h_color')
+                        //当最后一个变成无色非选中状态时候
+                        if($('.list-body').find('.h_color').length==0){
+                            shoppingcolor()
+                        }
+                    }
+                    $('.list-body').find('.h_color').length
+                    $('.checkBOx').html($('.list-body').find('.h_color').length)
+
+
+                }else{
+                    //把所点击的商品价格添加到总价上面
+                    $(target).parents('.item-box').find('.colornum').html()
+                    // console.log($(target).parents('.item-box').find('.colornum').html())
+                    $(target).addClass('h_color')
+                    if($('.list-body').find('.colorBox').hasClass('h_color')){
+                        var numberColor_1 =$('.list-body').find('.h_color').length
+                        // console.log(numberColor_1)
+                        //当最后一个变成橘色选中状态时候
+                        if(numberColor_1==numberColor){
+                            $('.colorBox_0').addClass('h_color')
+                            showCode();
+
+                        }   
+                    }
+                    $('.list-body').find('.h_color').length
+                    $('.checkBOx').html($('.list-body').find('.h_color').length)
+
+
+                }
+            }
+            //如果点击的是有colorBox_0这个类名的才能执行
+            if($(target).hasClass('colorBox_0')){
+                //橘色变成无
+                if($(target).hasClass('h_color')){
+                    shoppingcolor()
+                    $(target).removeClass('h_color')
+                    $(target).parents('.shopCartList').find('.colorBox').removeClass('h_color')
+                    $('.no-select-tip').css('display','block')
+                    $('.checkBOx').empty();
+                    $('.checkBOx').html(0) 
+                //无变成橘色
+                }else{
+                    $(target).addClass('h_color')
+                    $(target).parents('.shopCartList').find('.colorBox').addClass('h_color')
+                    showCode();
+                    $('.goshopping').css('background','#ff6700')     
+                    $('.goshopping').css('color','#fff')
+                    $('.no-select-tip').css('display','none')
+                }
+            }
         })
-    //需求六点击变橙色事件
+        
         
 
         
