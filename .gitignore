@@ -1,3 +1,7 @@
 node_modules
 dist
 package-lock
+src
+gulpfile
+package
+.gitignore

@@ -21,7 +21,7 @@
         });
 
 
-    //需求二点击X按钮消失一个方便你购买的div
+    //需求二点击X按钮消失一个“方便你购买，请提前登入的”div
         $('.biBtn').click(function(){
             $('.xiaoxiphone').css('display','none')
         })
